@@ -1,4 +1,3 @@
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -13,8 +12,8 @@ spec:
       labels:
         app: myapp
     spec:
-          containers:
-            - name: myapp
-              image: jenkins/jenkins:lts    
-              ports:
-                - containerPort: 8080
+      containers:
+        - name: myapp
+          image: tomcat:9.0  # Replaced Jenkins image with Tomcat image
+          ports:
+            - containerPort: 8080
