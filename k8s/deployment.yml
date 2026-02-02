@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: mnlove/mnr:34
+          image: mnlove/mnr:35
           ports:
             - containerPort: 8080
